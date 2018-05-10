@@ -1,0 +1,47 @@
+{% include "head_css.html "%}    
+{% include "navbar.html" %} 
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+
+
+{% block jumbotron_content %}
+</br>
+</br>
+<div class="row">
+		<div class="col-sm-6">
+	 		<h3>Contamos con los siguientes servicios:</h3>
+	 		</br>
+	 		<h5>* Servicio a domicilio</h5>
+	 		<h5>* Secado expres</h5>
+	 		<h5>* Lavado de ropa normal</h5>
+	 		<h5>* Lavado de ropa de cama</h5>
+	 		<h5>* Lavado de Manteleria</h5>
+	 		<h5>* Lavado de toallas</h5>
+	 		<h5>* Convenios con empresas</h5>
+	 	</div>
+	        
+	        
+			<div class="col-sm-4 "><img src="{% static 'img/maquinas.jpg' %}" class="img-responsive img-thumbnail" ></div>
+</div>        
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+
+{% include "footer.html" %}
+
+{% endblock %}
+
+       
+
+
+
+

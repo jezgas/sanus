@@ -1,0 +1,59 @@
+{% include "head_css.html "%}    
+{% include "navbar.html" %} 
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<h2 style="text-align: center;">Lista de Precios</h2>
+
+
+
+
+<table class="table table-hover order-table">
+      <thead>
+              <tr> 
+                <th><h5>Tipo de prenda</h5></th>
+                <th><h5>Precio</h5></th>
+               
+              </tr>
+      </thead>
+
+      {% for pre in object_list %}
+      <tr>
+        
+        <td>{{ pre.nombreprenda }}</td>
+        <td>{{ pre.precio }}</td>
+
+
+
+       </tr>
+
+        
+
+
+    
+
+         {% endfor %}
+    </table>
+
+</br>
+<h5>Colchas, Edrecolchas, Frazadas y Cobertores se cobrán segun el tamaño</h5>
+</br>
+
+{% include "footer.html" %}
+
+{% endblock %}
+
+ 
+
+	
+        
+    
+
+      
+
+
+
+

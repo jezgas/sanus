@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block head_title %} {% endblock %}
+
+{% block jumbotron_content %}
+<div class="row">
+		<div class="col-sm-6">
+	 		<h1>Lavanderia Sanus</h1>
+	        <p class="lead">Retiramos su ropa desde su casa y se la vamos a dejar limpia </p>
+	        <p class="lead">Usted relajese nosotros nos encargamos del lavado!!!!!</p>
+	        <a class="btn btn-lg btn-primary" href="{% url 'contacto' %}" role="button">Contactanos &raquo;</a>
+	        
+
+</div>
+<div class="col-sm-6 "><img src="{% static 'img/logo.jpg' %}" class="img-responsive img-thumbnail" ></div>
+		</div>                  
+
+
+{% endblock %}
+
+
+
+
+
+
+{% block content %}
+
+<div class="row mx-auto lead">
+	
+	<div class="col-sm-3 lead">
+		<h2 class="font-italic text-aling-center">Ropa normal</h2>
+		<div ><img src="{% static 'img/ropanormal.jpg' %}" class="img-thumbnail img-responsive" width="100%"></div>
+	</div>	
+	<div class="col-sm-3 lead">
+		<h2 class="font-italic text-aling-center">Ropa de cama</h2>
+		<div ><img src="{% static 'img/sabanas.jpg' %}"  class="img-thumbnail img-responsive rounded mx-auto d-block" width="70%" ></div>
+	</div>
+	<div class="col-sm-3 lead">
+		<h2 class="font-italic text-aling-center">Manteleria</h2>
+		<div ><img src="{% static 'img/manteleria.jpg' %}" class="img-thumbnail img-responsive rounded mx-auto d-block"  width="90%"></div>
+	</div>
+	<div class="col-sm-3">
+		<h2 class="font-italic text-aling-center">Toallas</h2>
+		<div ><img src="{% static 'img/toallas.jpg' %}" class="img-thumbnail img-responsive rounded mx-auto d-block" width="70%"></div>
+	</div>
+</div>
+{% include "footer.html" %}
+
+{% endblock %}
+
+

@@ -1,0 +1,40 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>{% block head_title %} {% endblock %}Lavanderia Sanus</title>
+
+{% include "head_css.html "%}    
+{% include "navbar.html" %}
+  </head>
+
+
+  <body>
+
+
+    <main role="main" class="container-fluid">
+{% block jumbotron %}
+
+      <div class="jumbotron">
+{% block jumbotron_content %}
+        
+{% endblock %}
+      </div>
+{% endblock %}
+
+
+      
+
+      {% block content %}
+      {% endblock %}
+    </main>
+</div>
+ 
+</html>

@@ -1,0 +1,56 @@
+{% include "head_css.html "%}    
+{% include "navbar.html" %} 
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+
+
+
+
+{% block jumbotron_content %}
+<h4 style="text-align: center;">Datos de contacto</h4>
+<div class="row mx-auto lead">
+		
+	   
+		
+		<p align="justify">Direccion: Ciruelo y prolongacion Ignacio Zaragoza No.70 Col. San gregorio Atlapulco Xochimilco. <strong>Tel: 21573291</strong> Horario
+		de Lunea a viernes de 9:00 am a 6:00 pm y sabados de 9:00 am a 2:00 pm. <strong> email: lavanderiasanus@gmail.com</strong> </p>
+
+
+	
+</div>        
+
+
+{% endblock %}
+
+
+</br>
+</br>
+
+{% block content %}
+
+
+<div class="row mx-auto lead">
+	<div class="mx-auto lead col-sm-4">
+	<h4 style="text-align: center;">Solicita el servicio</h4>
+		<form method="POST" action="">{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" name="" value="Enviar">
+		</form>
+	</div>
+
+
+	<div class="mx-auto lead">
+	<h4 style="text-align: center;">Mapa del sitio</h4>
+		<iframe class="text-aling-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.6617096538207!2d-99.07456428572098!3d19.25356965137157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce03894a6f3acd%3A0x5aade1d25fa20ac1!2sProl.+Ignacio+Zaragoza+70%2C+Santa+Cruz+Acalpixca%2C+16500+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1525303563264" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+
+</div>
+
+
+{% include "footer.html" %}
+
+{% endblock %}
